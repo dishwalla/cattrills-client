@@ -46,7 +46,7 @@ public class Client {
 				} while (res2 != true);
 
 				response = ctcsi.getResponse();
-				System.out.println(response);
+				System.out.println(response); //How many questions will be there in the game?
 
 				String iter = sc.nextLine();
 				ctcsi.putString(iter); //kol-vo voprosov
@@ -72,14 +72,10 @@ public class Client {
 				String result = ctcsi.getEntireResult();
 
 				System.out.println(result);
-				//System.out.println("\n\n");
-				
-				//response = ctcsi.getResponse(); //poluchaesh 
+			
 				System.out.println("Do you wanna quit?"); //"Do you wanna quit?"
 				String yn = sc.nextLine();
 				ctcsi.goOn(yn);
-				//response = ctcsi.getResponse();
-				//System.out.println(response);
 				if(yn.equals("y") || yn.equals("Y")){
 					continueGame = false;
 				}	
